@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robotik Quiz</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Robotik Quiz - {{ question_number }}</h1>
+        <form method="POST">
+            <p>{{ question_data.question }}</p>
+            {% for option in question_data.options %}
+                <div class="option">
+                    <label>
+                        <input type="radio" name="answer" value="{{ option }}" required>
+                        {{ option }}
+                    </label>
+                </div>
+            {% endfor %}
+            <div class="ileri">
+                <button type="submit">İleri</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #b4abf4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.result-container {
+    background-color: #007bff;
+    border-radius: 10px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    display: block;
+}
+
+h1 {
+    font-size: 28px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 20px;
+    color: white;
+    margin: 20px 0;
+}
+
+a {
+    display: block;
+    width: 100%;  /* Buton genişliği konteyner genişliğine ayarlandı */
+    text-align: center;
+    padding: 10px 0;  /* Yatay padding ayarlandı */
+    margin-top: 20px;
+    background-color: #0056b3;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+a:hover {
+    background-color: #004494;
+}
